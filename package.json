@@ -1,0 +1,20 @@
+{
+  "name": "ozcart-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright UI tests for demo.ozcart.com (14ct Gold Earrings flow) + API bonus tests for Swagger Petstore",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --project=ui",
+    "test:api": "playwright test --project=api",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed --project=ui",
+    "test:debug": "playwright test --debug --project=ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
